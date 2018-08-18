@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/object"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_blue_light" />
+
+    <ImageView
+        android:id="@+id/direction_arrow"
+        android:layout_width="100dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/down_arrow"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/object"
+        app:srcCompat="@drawable/down_arrow" />
+
+    <ImageView
+        android:id="@+id/garbage_bin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direction_arrow"
+        app:srcCompat="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/predicition_correct_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/prediction_correct_button"
+        app:layout_constraintEnd_toStartOf="@+id/garbage_bin"
+        app:layout_constraintTop_toBottomOf="@+id/garbage_bin" />
+
+    <Button
+        android:id="@+id/prediction_incorrect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/prediction_incorrect_button"
+        app:layout_constraintStart_toEndOf="@+id/garbage_bin"
+        app:layout_constraintTop_toBottomOf="@+id/garbage_bin" />
+
+    <TextView
+        android:id="@+id/objectName"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Original text"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/garbage_bin"
+        app:layout_constraintStart_toStartOf="@+id/garbage_bin"
+        app:layout_constraintTop_toBottomOf="@+id/garbage_bin" />
+</android.support.constraint.ConstraintLayout>
