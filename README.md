@@ -1,0 +1,2 @@
+# Android Waste Scanner Application
+This application uses the power of Google's Tensorflow framework to classify waste images and helps the user in finding the correct bin to dispose of their waste in. This applications is aimed towards reducing the problem of waste segregation by leveraging machine learning.
